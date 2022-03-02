@@ -1,0 +1,35 @@
+Started by user [8mha:////4PIBGRL8mpRncvuiuIuK194vXDncr1JRHVw/K/ihBgygAAAAlR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZO/dLi1CL9xKRkAGDVhlq+AAAA[0mabc
+Running as SYSTEM
+Building remotely on [8mha:////4C3eddYzgZmkcpmlsEQvZFCwJvB4jqjJQKGc8rk5gbNGAAAAoB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZR/eT83ILSktQi/dKk0ryS0jygaw0B8nU0HcoAAAA=[0mubuntunode1 in workspace /home/ubuntu/workspace/c-project
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /home/ubuntu/workspace/c-project/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/kruthi7936/c-project.git # timeout=10
+Fetching upstream changes from https://github.com/kruthi7936/c-project.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.17.1'
+ > git fetch --tags --progress -- https://github.com/kruthi7936/c-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 9ad81d84f9fd518a82dbaa4d2021db6c76656503 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 9ad81d84f9fd518a82dbaa4d2021db6c76656503 # timeout=10
+Commit message: "this is makefile for big2"
+ > git rev-list --no-walk 9ad81d84f9fd518a82dbaa4d2021db6c76656503 # timeout=10
+[c-project] $ /bin/sh -xe /tmp/jenkins10069974197432874062.sh
++ cd /home/ubuntu/workspace/c-project
++ make
+gcc -c main.c
+main.c:2:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ main() {
+ ^~~~
+main.c: In function ‘main’:
+main.c:4:10: warning: implicit declaration of function ‘biggest’ [-Wimplicit-function-declaration]
+          biggest();
+          ^~~~~~~
+gcc -c big2.c
+big2.c:2:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ biggest()
+ ^~~~~~~
+gcc -o ABC.exe main.o big2.o 
+Finished: SUCCESS

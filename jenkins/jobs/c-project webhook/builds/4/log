@@ -1,0 +1,19 @@
+Started by GitHub push by kruthi7936
+Running as SYSTEM
+Building on master in workspace /var/lib/jenkins/workspace/c-project webhook
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/c-project webhook/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/kruthi7936/c-project.git # timeout=10
+Fetching upstream changes from https://github.com/kruthi7936/c-project.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/kruthi7936/c-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision f1742b3c1609bb8213ea8d40eee6c1fe4aae55d8 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f f1742b3c1609bb8213ea8d40eee6c1fe4aae55d8 # timeout=10
+Commit message: "Create first1"
+ > git rev-list --no-walk 01b6ae0f7af9efbadfe38fa2965e6a0fc82e9fd3 # timeout=10
+Finished: SUCCESS

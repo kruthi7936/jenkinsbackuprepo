@@ -1,0 +1,23 @@
+Started by GitHub push by kruthi7936
+Running as SYSTEM
+Building remotely on [8mha:////4JIskMEz3Ov/ToP3uzXssRsQlve8U6XPXw9F564QFK2/AAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZ+/eT83ILSktQi/TygOw0BADPgR8QAAAA=[0mnode1 in workspace /home/ec2-user/workspace/c-project
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /home/ec2-user/workspace/c-project/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/kruthi7936/c-project.git # timeout=10
+Fetching upstream changes from https://github.com/kruthi7936/c-project.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/kruthi7936/c-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 4d83ec981c7a768cdccb20311e7badd784f06d33 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 4d83ec981c7a768cdccb20311e7badd784f06d33 # timeout=10
+Commit message: "Update webhook"
+ > git rev-list --no-walk f1742b3c1609bb8213ea8d40eee6c1fe4aae55d8 # timeout=10
+[c-project] $ /bin/sh -xe /tmp/jenkins3693694937843453342.sh
++ cd /home/ec2-user/workspace/c-project
++ make
+make: 'ABC.exe' is up to date.
+Finished: SUCCESS
